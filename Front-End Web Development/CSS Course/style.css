@@ -1,0 +1,78 @@
+* {
+    font-family: Cambria;
+    box-sizing: border-box;
+}
+body {
+    height: 150vh;
+}
+/* Group */
+h1, h2 {
+    color: blueviolet !important;
+}
+
+/* Direct Child */
+.box > p {
+    color: firebrick;
+}
+
+/* Decendant (Grandchildren)*/
+.box li {
+    color: blue;
+}
+
+/* Chaining */
+li.done {
+    color: seagreen;
+}
+
+/* Combining Combiners */
+ul p.done {
+    font-size: 0.5rem;
+}
+
+.static-post {
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
+    background-color: red;
+    position: static;
+    top: 100px;
+}
+
+
+.relative-post {
+    height: 50px;
+    width: 50px;
+    border: 1px solid blue;
+    background-color: blue;
+    position: relative;
+    margin-top: 250px;
+}
+
+.parent {
+    position: relative;
+  height: 100px;
+    width: 500px;
+    border: 1px solid green;
+    background-color: green;
+    
+}
+
+.child {
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fixed-post {
+position: fixed;
+  height: 100px;
+    width: 500px;
+    border: 1px solid purple;
+    background-color: purple;
+    margin-top: 120px;
+}
